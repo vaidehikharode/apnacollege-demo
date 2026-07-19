@@ -1,0 +1,14 @@
+*{
+    font-family:'Gill Sans';
+    background-color:antiquewhite;
+}
+
+h1,
+h3{
+    color:#b92b27 ;
+}
+
+button{
+    background-color: #F52936;
+    color: #ffffff;
+}
