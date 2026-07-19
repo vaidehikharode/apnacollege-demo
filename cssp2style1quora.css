@@ -8,7 +8,12 @@ h3{
     color:#b92b27 ;
 }
 
-button{
+#signup{
     background-color: #F52936;
     color: #ffffff;
+}
+
+#login{
+    background-color: #fff;
+    color: #000;
 }
