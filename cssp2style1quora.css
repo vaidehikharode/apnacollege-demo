@@ -1,13 +1,16 @@
+/*universal selector*/
 *{
     font-family:'Gill Sans';
     background-color:antiquewhite;
 }
 
+/*element selector*/
 h1,
 h3{
     color:#b92b27 ;
 }
 
+/*id selector*/
 #signup{
     background-color: #F52936;
     color: #ffffff;
@@ -16,4 +19,61 @@ h3{
 #login{
     background-color: #fff;
     color: #000;
+}
+
+/*class selector*/
+.upvote{
+    background-color: aquamarine;
+    color: #000;
+}
+
+/*descendant selector*/
+/*p a{
+    color: purple;
+}
+ but there can be another paraghraphs containing different a tags, in that case the same style will be aplicable 
+ to it and the another one is wanted to be different so that we can use the class secector in p tag only of those
+a tags which we want to give purple color like following...(see html code also)  
+*/
+
+.post a{                            /*post is class that is why . is used otherwise . is not needed in this syntax*/
+    color: purple;
+}
+
+/*to change the color of list(dots) only not for a tag*/
+nav ul li{                         
+    color: hotpink;
+}
+
+/*for links also*/
+nav ul li a{
+    color: hotpink;
+}
+
+/*adjacent sibling combinator*/
+p + h3{
+    text-decoration: underline;
+}
+
+/*other sibling combinator, understand well*/
+.upvote + button{
+    background-color:darkseagreen;
+}
+
+/*child combinator*/
+div > input{
+    background-color:burlywood;
+}
+
+/*attribute selector*/
+input[type="text"]{
+    color: brown;
+}
+
+input[type="password"]{
+     color: brown;
+}
+
+input[type]{
+    background-color:azure;
 }
